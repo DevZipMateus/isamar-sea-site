@@ -46,7 +46,7 @@ const Footer = () => {
                 <button
                   key={link.href}
                   onClick={() => {
-                    const element = document.querySelector(link.href);
+                    const element = document.querySelector(link.href) as HTMLElement;
                     if (element) {
                       const offsetTop = element.offsetTop - 80;
                       window.scrollTo({

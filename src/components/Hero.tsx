@@ -4,7 +4,7 @@ import { ArrowRight, Fish, Award, Truck } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContact = () => {
-    const element = document.querySelector('#contato');
+    const element = document.querySelector('#contato') as HTMLElement;
     if (element) {
       const offsetTop = element.offsetTop - 80;
       window.scrollTo({
@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   const scrollToProducts = () => {
-    const element = document.querySelector('#produtos');
+    const element = document.querySelector('#produtos') as HTMLElement;
     if (element) {
       const offsetTop = element.offsetTop - 80;
       window.scrollTo({
