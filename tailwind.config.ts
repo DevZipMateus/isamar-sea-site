@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,34 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				ocean: {
+					50: 'hsl(var(--ocean-50))',
+					100: 'hsl(var(--ocean-100))',
+					200: 'hsl(var(--ocean-200))',
+					300: 'hsl(var(--ocean-300))',
+					400: 'hsl(var(--ocean-400))',
+					500: 'hsl(var(--ocean-500))',
+					600: 'hsl(var(--ocean-600))',
+					700: 'hsl(var(--ocean-700))',
+					800: 'hsl(var(--ocean-800))',
+					900: 'hsl(var(--ocean-900))',
+				},
+				coral: {
+					50: 'hsl(var(--coral-50))',
+					100: 'hsl(var(--coral-100))',
+					200: 'hsl(var(--coral-200))',
+					300: 'hsl(var(--coral-300))',
+					400: 'hsl(var(--coral-400))',
+					500: 'hsl(var(--coral-500))',
+					600: 'hsl(var(--coral-600))',
+					700: 'hsl(var(--coral-700))',
+					800: 'hsl(var(--coral-800))',
+					900: 'hsl(var(--coral-900))',
+				},
+			},
+			fontFamily: {
+				'display': ['Inter', 'system-ui', 'sans-serif'],
+				'body': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +103,37 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'wave': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'wave': 'wave 3s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'ocean-gradient': 'linear-gradient(135deg, hsl(var(--ocean-500)) 0%, hsl(var(--ocean-600)) 100%)',
+				'coral-gradient': 'linear-gradient(135deg, hsl(var(--coral-400)) 0%, hsl(var(--coral-500)) 100%)',
+				'hero-gradient': 'linear-gradient(135deg, hsl(var(--ocean-600)) 0%, hsl(var(--ocean-700)) 50%, hsl(var(--ocean-800)) 100%)',
 			}
 		}
 	},
