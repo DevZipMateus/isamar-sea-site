@@ -47,54 +47,57 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-white animate-fade-in">
-            <div className="flex items-center gap-2 mb-6">
-              <Fish className="w-8 h-8 text-coral-400" />
-              <span className="text-coral-300 font-medium">Qualidade Premium</span>
-            </div>
-            
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Frutos do Mar
-              <span className="block gradient-text">Frescos e Premium</span>
-            </h1>
-            
-            <p className="text-xl text-ocean-100 mb-8 leading-relaxed max-w-xl">
-              O parceiro de confiança para sua cozinha profissional. Oferecemos os melhores pescados e frutos do mar com qualidade garantida direto das embarcações.
-            </p>
+            {/* Semi-transparent background for text content */}
+            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 lg:p-10">
+              <div className="flex items-center gap-2 mb-6">
+                <Fish className="w-8 h-8 text-coral-400" />
+                <span className="text-coral-300 font-medium">Qualidade Premium</span>
+              </div>
+              
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Frutos do Mar
+                <span className="block gradient-text">Frescos e Premium</span>
+              </h1>
+              
+              <p className="text-xl text-ocean-100 mb-8 leading-relaxed max-w-xl">
+                O parceiro de confiança para sua cozinha profissional. Oferecemos os melhores pescados e frutos do mar com qualidade garantida direto das embarcações.
+              </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mb-10">
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-coral-500/20 rounded-full mb-2 mx-auto">
-                  <Fish className="w-6 h-6 text-coral-300" />
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-6 mb-10">
+                <div className="text-center">
+                  <div className="flex items-center justify-center w-12 h-12 bg-coral-500/20 rounded-full mb-2 mx-auto">
+                    <Fish className="w-6 h-6 text-coral-300" />
+                  </div>
+                  <div className="text-2xl font-bold text-white">15+</div>
+                  <div className="text-sm text-ocean-200">Tipos de Produtos</div>
                 </div>
-                <div className="text-2xl font-bold text-white">15+</div>
-                <div className="text-sm text-ocean-200">Tipos de Produtos</div>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-coral-500/20 rounded-full mb-2 mx-auto">
-                  <Award className="w-6 h-6 text-coral-300" />
+                <div className="text-center">
+                  <div className="flex items-center justify-center w-12 h-12 bg-coral-500/20 rounded-full mb-2 mx-auto">
+                    <Award className="w-6 h-6 text-coral-300" />
+                  </div>
+                  <div className="text-2xl font-bold text-white">100%</div>
+                  <div className="text-sm text-ocean-200">Qualidade</div>
                 </div>
-                <div className="text-2xl font-bold text-white">100%</div>
-                <div className="text-sm text-ocean-200">Qualidade</div>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-coral-500/20 rounded-full mb-2 mx-auto">
-                  <Truck className="w-6 h-6 text-coral-300" />
+                <div className="text-center">
+                  <div className="flex items-center justify-center w-12 h-12 bg-coral-500/20 rounded-full mb-2 mx-auto">
+                    <Truck className="w-6 h-6 text-coral-300" />
+                  </div>
+                  <div className="text-2xl font-bold text-white">24h</div>
+                  <div className="text-sm text-ocean-200">Entrega Rápida</div>
                 </div>
-                <div className="text-2xl font-bold text-white">24h</div>
-                <div className="text-sm text-ocean-200">Entrega Rápida</div>
               </div>
-            </div>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button onClick={scrollToProducts} className="btn-hero">
-                Ver Produtos
-                <ArrowRight className="w-5 h-5" />
-              </button>
-              <button onClick={scrollToContact} className="btn-secondary">
-                Solicitar Orçamento
-              </button>
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button onClick={scrollToProducts} className="btn-hero">
+                  Ver Produtos
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+                <button onClick={scrollToContact} className="btn-secondary">
+                  Solicitar Orçamento
+                </button>
+              </div>
             </div>
           </div>
 
