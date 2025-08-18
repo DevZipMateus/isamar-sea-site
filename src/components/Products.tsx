@@ -8,56 +8,56 @@ const Products = () => {
       name: 'Camarão Rosa',
       description: 'Inteiro e limpo, premium quality',
       category: 'Camarões',
-      image: '🦐',
+      image: '/lovable-uploads/galeria/camarão rosa.jpg',
       popular: true
     },
     {
       name: 'Camarão Vannamei',
       description: 'Inteiro e limpo, sabor excepcional',
       category: 'Camarões',
-      image: '🦐',
+      image: '/lovable-uploads/galeria/camarão vannamei.jpg',
       popular: true
     },
     {
       name: 'Lagosta',
       description: 'Inteira e cauda, frescor garantido',
       category: 'Lagostas',
-      image: '🦞',
+      image: '/lovable-uploads/galeria/lagosta.jpg',
       popular: true
     },
     {
       name: 'Filé de Salmão',
       description: 'Premium, corte perfeito',
       category: 'Peixes',
-      image: '🐟',
+      image: '/lovable-uploads/galeria/file de salmão.jpg',
       popular: false
     },
     {
       name: 'Lula Nacional',
       description: 'Fresca, qualidade superior',
       category: 'Lulas',
-      image: '🦑',
+      image: '/lovable-uploads/galeria/lula.jpg',
       popular: false
     },
     {
       name: 'Polvo Nacional',
       description: 'Premium, direto da costa',
       category: 'Polvos',
-      image: '🐙',
+      image: '/lovable-uploads/galeria/polvo.jpg',
       popular: true
     },
     {
       name: 'Filé de Tilápia',
       description: 'Fresco, sem espinhas',
       category: 'Peixes',
-      image: '🐟',
+      image: '/lovable-uploads/galeria/file de tilapia.jpg',
       popular: false
     },
     {
       name: 'Atum',
       description: 'Premium, ideal para pratos gourmet',
       category: 'Peixes',
-      image: '🐟',
+      image: '/lovable-uploads/galeria/atum.jpg',
       popular: false
     }
   ];
@@ -103,8 +103,12 @@ const Products = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {filteredProducts.map((product, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg card-hover overflow-hidden">
-              <div className="relative p-8 bg-gradient-to-br from-ocean-50 to-coral-50">
-                <div className="text-6xl text-center mb-4">{product.image}</div>
+              <div className="relative h-48 bg-gradient-to-br from-ocean-50 to-coral-50">
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className="w-full h-full object-cover"
+                />
                 {product.popular && (
                   <div className="absolute top-4 right-4 bg-coral-gradient text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
                     <Star className="w-3 h-3" />
