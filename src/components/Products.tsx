@@ -69,6 +69,16 @@ const Products = () => {
     ? products 
     : products.filter(product => product.category === activeCategory);
 
+  const handleImageError = (productName: string, imagePath: string) => {
+    console.log(`Erro ao carregar imagem do produto: ${productName}`);
+    console.log(`Caminho da imagem: ${imagePath}`);
+    console.log(`URL completa: ${window.location.origin}${imagePath}`);
+  };
+
+  const handleImageLoad = (productName: string) => {
+    console.log(`Imagem carregada com sucesso: ${productName}`);
+  };
+
   return (
     <section id="produtos" className="section-padding bg-gray-50">
       <div className="container-width">
@@ -108,6 +118,8 @@ const Products = () => {
                   src={product.image} 
                   alt={product.name}
                   className="w-full h-full object-cover"
+                  onError={() => handleImageError(product.name, product.image)}
+                  onLoad={() => handleImageLoad(product.name)}
                 />
                 {product.popular && (
                   <div className="absolute top-4 right-4 bg-coral-gradient text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
