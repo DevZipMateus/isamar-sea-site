@@ -79,7 +79,7 @@ const Footer = () => {
                 className="flex items-center gap-3 text-ocean-200 hover:text-coral-400 transition-colors duration-200"
               >
                 <Mail className="w-4 h-4" />
-                isamarpescados@gmail.co
+                isamarpescados@gmail.com
               </a>
               <div className="flex items-center gap-3 text-ocean-200">
                 <MapPin className="w-4 h-4" />
