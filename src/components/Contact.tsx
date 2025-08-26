@@ -7,15 +7,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      info: '(11) 94757-3497',
-      info: '(11).94755-8918',
+      info: '(11) 94757-3497 / (11) 94755-8918',
       link: 'tel:+5511947573497',
       color: 'ocean'
     },
     {
       icon: Mail,
       title: 'E-mail',
-      info: 'isamarpescados@gmail.co',
+      info: 'isamarpescados@gmail.com',
       link: 'mailto:isamarpescados@gmail.com',
       color: 'coral'
     },
