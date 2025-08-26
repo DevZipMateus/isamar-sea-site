@@ -1,5 +1,6 @@
 import React from 'react';
-import { Anchor, Clock, Shield, Truck, Users, Award } from 'lucide-react';
+import { Anchor, Clock, Shield, Truck, Users, Award, Zap } from 'lucide-react';
+
 const Differentials = () => {
   const differentials = [{
     icon: Anchor,
@@ -27,10 +28,15 @@ const Differentials = () => {
     description: 'Controle de qualidade direto na origem, desde a captura até a entrega.',
     color: 'ocean'
   }, {
+    icon: Zap,
+    title: 'Entregas de Emergência',
+    description: 'Atendemos entregas de emergência aos Sábados, Domingos e Feriados.',
+    color: 'coral'
+  }, {
     icon: Award,
     title: 'Experiência Comprovada',
     description: 'Sólida experiência no mercado de frutos do mar e pescados.',
-    color: 'coral'
+    color: 'ocean'
   }];
   return <section id="diferenciais" className="section-padding bg-white">
       <div className="container-width">
