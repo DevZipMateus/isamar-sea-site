@@ -32,14 +32,14 @@ const Products = () => {
       popular: false
     },
     {
-      name: 'Lula Nacional e Internacional',
+      name: 'Lula Nacional e Importado',
       description: 'Fresca, qualidade superior',
       category: 'Lulas',
       image: '/lovable-uploads/galeria/lula.jpg',
       popular: false
     },
     {
-      name: 'Polvo Nacional e Internacional',
+      name: 'Polvo Nacional e Importado',
       description: 'Premium, direto da costa',
       category: 'Polvos',
       image: '/lovable-uploads/b599b506-36c4-42fb-ac5f-a7f6382edf54.png',
