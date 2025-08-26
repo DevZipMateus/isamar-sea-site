@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img 
-                src="/lovable-uploads/9ef773bd-5af3-4905-8617-933f20d3d7e2.png" 
+                src="/lovable-uploads/19a97f51-a9b7-424c-ab33-558a56733374.png" 
                 alt="Isamar Pescados" 
                 className="h-12 w-auto"
               />
