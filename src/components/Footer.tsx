@@ -13,14 +13,10 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img 
-                src="/lovable-uploads/c4520a86-0065-46dc-9433-809ef341a63b.png" 
+                src="/lovable-uploads/9ef773bd-5af3-4905-8617-933f20d3d7e2.png" 
                 alt="Isamar Pescados" 
                 className="h-12 w-auto"
               />
-              <div>
-                <h3 className="text-xl font-bold">Isamar Pescados</h3>
-                <p className="text-ocean-300">Frutos do Mar</p>
-              </div>
             </div>
             <p className="text-ocean-200 leading-relaxed mb-6 max-w-md">
               O parceiro de confiança para sua cozinha profissional. 
@@ -75,7 +71,7 @@ const Footer = () => {
                 (11) 94757-3497
               </a>
               <a 
-                href="mailto:isamarpescados@gmail.co"
+                href="mailto:isamarpescados@gmail.com"
                 className="flex items-center gap-3 text-ocean-200 hover:text-coral-400 transition-colors duration-200"
               >
                 <Mail className="w-4 h-4" />

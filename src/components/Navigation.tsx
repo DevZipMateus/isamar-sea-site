@@ -41,14 +41,10 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/c4520a86-0065-46dc-9433-809ef341a63b.png" 
+              src="/lovable-uploads/9ef773bd-5af3-4905-8617-933f20d3d7e2.png" 
               alt="Isamar Pescados e Frutos do Mar" 
               className="h-12 w-auto"
             />
-            <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-ocean-700">Isamar Pescados</h1>
-              <p className="text-sm text-ocean-500">Frutos do Mar</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
