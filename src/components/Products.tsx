@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Fish, Star } from 'lucide-react';
+import { showWhatsAppOptions } from '../utils/whatsappUtils';
 
 const Products = () => {
   const products = [
@@ -78,6 +80,14 @@ const Products = () => {
     console.log(`Imagem carregada com sucesso: ${productName}`);
   };
 
+  const handleProductQuote = (productName: string) => {
+    showWhatsAppOptions(`Olá! Gostaria de solicitar orçamento para ${productName} da Isamar Pescados.`);
+  };
+
+  const handleCatalogRequest = () => {
+    showWhatsAppOptions('Olá! Gostaria de ver o catálogo completo de produtos da Isamar Pescados.');
+  };
+
   return (
     <section id="produtos" className="section-padding bg-gray-50">
       <div className="container-width">
@@ -136,7 +146,10 @@ const Products = () => {
                 <h3 className="text-xl font-bold text-ocean-800 mb-2">{product.name}</h3>
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 
-                <button className="w-full bg-ocean-gradient text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300">
+                <button 
+                  onClick={() => handleProductQuote(product.name)}
+                  className="w-full bg-ocean-gradient text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300"
+                >
                   Solicitar Orçamento
                 </button>
               </div>
@@ -153,7 +166,7 @@ const Products = () => {
               Trabalhamos com diversos outros produtos. Entre em contato conosco para 
               consultar disponibilidade e preços personalizados para seu estabelecimento.
             </p>
-            <button className="btn-hero">
+            <button onClick={handleCatalogRequest} className="btn-hero">
               Ver Catálogo Completo
             </button>
           </div>

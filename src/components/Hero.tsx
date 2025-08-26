@@ -1,17 +1,10 @@
-
 import React from 'react';
 import { ArrowRight, Fish, Award, Truck } from 'lucide-react';
+import { showWhatsAppOptions } from '../utils/whatsappUtils';
 
 const Hero = () => {
   const scrollToContact = () => {
-    const element = document.querySelector('#contato') as HTMLElement;
-    if (element) {
-      const offsetTop = element.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
-    }
+    showWhatsAppOptions('Olá! Gostaria de solicitar um orçamento para produtos da Isamar Pescados.');
   };
 
   const scrollToProducts = () => {

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Fish, Phone, Mail, Instagram } from 'lucide-react';
 
@@ -68,6 +69,13 @@ const Footer = () => {
               >
                 <Phone className="w-4 h-4" />
                 (11) 94757-3497
+              </a>
+              <a 
+                href="tel:+5511947558918"
+                className="flex items-center gap-3 text-ocean-200 hover:text-coral-400 transition-colors duration-200"
+              >
+                <Phone className="w-4 h-4" />
+                (11) 94755-8918
               </a>
               <a 
                 href="mailto:isamarpescados@gmail.com"

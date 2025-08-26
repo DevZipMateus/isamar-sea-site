@@ -1,5 +1,6 @@
 import React from 'react';
 import { Anchor, Clock, Shield, Truck, Users, Award, Zap } from 'lucide-react';
+import { showWhatsAppOptions } from '../utils/whatsappUtils';
 
 const Differentials = () => {
   const differentials = [{
@@ -38,6 +39,15 @@ const Differentials = () => {
     description: 'Sólida experiência no mercado de frutos do mar e pescados.',
     color: 'ocean'
   }];
+
+  const handleQuoteRequest = () => {
+    showWhatsAppOptions('Olá! Gostaria de solicitar um orçamento para produtos da Isamar Pescados.');
+  };
+
+  const handleWhatsAppContact = () => {
+    showWhatsAppOptions('Olá! Gostaria de falar sobre os produtos e serviços da Isamar Pescados.');
+  };
+
   return <section id="diferenciais" className="section-padding bg-white">
       <div className="container-width">
         <div className="text-center mb-16">
@@ -74,10 +84,16 @@ const Differentials = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-hero bg-white text-ocean-600 hover:bg-gray-100">
+            <button 
+              onClick={handleQuoteRequest}
+              className="btn-hero bg-white text-ocean-600 hover:bg-gray-100"
+            >
               Solicitar Orçamento
             </button>
-            <button className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-ocean-600">
+            <button 
+              onClick={handleWhatsAppContact}
+              className="btn-secondary bg-transparent border-white text-white hover:bg-white hover:text-ocean-600"
+            >
               Falar no WhatsApp
             </button>
           </div>
@@ -85,4 +101,5 @@ const Differentials = () => {
       </div>
     </section>;
 };
+
 export default Differentials;
