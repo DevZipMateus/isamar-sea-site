@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Instagram } from 'lucide-react';
+import { Phone, Mail, Clock, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
@@ -16,13 +16,6 @@ const Contact = () => {
       info: 'isamarpescados@gmail.com',
       link: 'mailto:isamarpescados@gmail.com',
       color: 'coral'
-    },
-    {
-      icon: MapPin,
-      title: 'Endereço',
-      info: 'Rua Estevão Porto, 32',
-      link: 'https://maps.google.com/?q=Rua+Estevão+Porto,+32',
-      color: 'ocean'
     },
     {
       icon: Instagram,

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Fish, Phone, Mail, MapPin, Instagram } from 'lucide-react';
+import { Fish, Phone, Mail, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -77,10 +76,6 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 isamarpescados@gmail.com
               </a>
-              <div className="flex items-center gap-3 text-ocean-200">
-                <MapPin className="w-4 h-4" />
-                Rua Estevão Porto, 32
-              </div>
               <a 
                 href="https://www.instagram.com/isamar_pescados?igsh=NWpyNnoxY2g4Z3Bt"
                 target="_blank"
