@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Fish, Star } from 'lucide-react';
 
@@ -22,7 +21,7 @@ const Products = () => {
       name: 'Lagosta',
       description: 'Inteira e cauda, frescor garantido',
       category: 'Lagostas',
-      image: '/lovable-uploads/galeria/lagosta.jpg',
+      image: '/lovable-uploads/d651c39f-4644-4a45-84e7-67475bd8ea2e.png',
       popular: true
     },
     {
@@ -43,7 +42,7 @@ const Products = () => {
       name: 'Polvo Nacional e Internacional',
       description: 'Premium, direto da costa',
       category: 'Polvos',
-      image: '/lovable-uploads/galeria/polvo.jpg',
+      image: '/lovable-uploads/b599b506-36c4-42fb-ac5f-a7f6382edf54.png',
       popular: true
     },
     {
